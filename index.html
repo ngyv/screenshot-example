@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=utf-8>
+  <title>Screenshot example</title>
+  <style>
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+    }
+    .animate {
+      width: 100px;
+      height: 100px;
+      animation-name: expand;
+      animation-duration: 5s;
+    }
+    @keyframes expand {
+      0% {
+        width: 100px;
+        height: 100px;
+        opacity: 0.3;
+      }
+      45% {
+        transform: rotate(-20deg);
+      }
+      60% {
+        width: 400px;
+        height: 400px;
+        opacity: 1;
+        transform: rotate(-30deg);
+      }
+      100% {
+        width: 500px;
+        height: 500px;
+        opacity: 1;
+        transform: rotate(20deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-center">
+    <img src="i-guess.png" class="animate"/>
+  </div>
+</body>
+</html>
